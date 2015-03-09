@@ -130,4 +130,76 @@
 \noindent
 39. C.W. Tang, *Appl. Phys. Lett*, **(1986)**, 48: 183-185.
 
+\noindent
+40. N. S. Sariciftci, L. Smilowitz, A. J. Heeger and F. Wudl, *Science*, **(1992)**,
+	258: 1474–1476.
 
+\noindent
+41. L. Smilowitz, N. S. Sariciftci, R. Wu, C. Gettinger, A. J. Heeger and F. Wudl,
+	*Phys. Rev. B.*, **(1993)**, 47: 13835–13842.
+
+\noindent
+42. C. H. Lee, G. Yu, D. Moses, K. Pakbaz, C. Zhang, N. S. Sariciftci, A. J. Heeger
+	and F. Wudl, *Phys. Rev. B.*, **(1993)**, 48, 15425–15433.
+
+\noindent
+43. S. Morita, A. A. Zakhidov and K. Yoshino, *Solid State Commun.*, **(1992)**, 82:
+	249–252.
+
+\noindent
+44. S. Morita, S. Kiyomatsu, X. H. Yin, A. A. Zakhidov, T. Noguchi, T. Ohnishi and
+	K. Yoshino, *J. Appl. Phys.*, **(1993)**, 74: 2860–2865.
+
+\noindent
+45. S.M. Zhang, *Sem. Opto*, **(2003)**, 24:84.
+
+\noindent
+46. A. Tsumura, H. Koezuka, T. Ando, *Appl. Phys. Lett.*, **(1986)**, 49:1210.
+
+\noindent
+47. G. Horowitz, *Adv. Mat.*, **(1996)**, 8:242.
+
+\noindent
+48. W.Y. Liang, Excitons, *Physics Education.* **(1970)** 5: 226–228.
+	doi:10.1088/0031-9120/5/4/003.
+
+\noindent
+49. C. Y. Yang and A. J. Heeger, *Synth. Met.*, **(1996)**, 83: 85–88.  
+
+\noindent
+50. M. C. Scharber and N. S. Sariciftci, *Prog. Polym. Sci.*, **(2013)**, 38: 1929–
+	1940.
+
+\noindent
+51. J. Guo, H. Ohkita, H. Benten and S. Ito, *J. Am. Chem. Soc.*, **(2010)**, 132:
+	6154–6164.
+
+\noindent
+52. R. Tautz, E. D. Como, C. Wiebeler, G. Soavi, I. Dumsch, N. Frohlich, G.
+	Grancini, S. Allard, U. Scherf, G. Cerullo, S. Schumacher and Jochen Feldmann,
+	*J. Am. Chem. Soc.*, **(2013)**, 135: 4282–4290.
+
+\noindent
+53. S. R. Gonzalez, Y. Ie, Y. Aso, J. T. L. Navarrete and J. Casado, *J. Am. Chem.
+	Soc*., **(2011)**, 133: 16350–16353.
+
+\noindent
+54. Banerji, N.; Cowan, S.; Heeger, A. J. Exciton Formation, Relaxation, and Decay
+	in PCDTBT. *J. Am. Chem. Soc.*, **(2010)**, 132: 17459−17470.
+
+\noindent
+55. Banerji, N.; Cowan, S.; Vauthey, E.; Heeger, A. J. Ultrafast Relaxation of the
+	Poly(3-hexylthiophene) Emission Spectrum. *J. Phys.  Chem. C*, **(2011)**, 115:
+	9726−9739.
+
+\noindent
+56.  Devižis, A.; Serbenta, A.; Meerholz, K.; Hertel, D.; Gulbinas, V.  Excited
+	 State Relaxation in Poly(spirobifluorene-co-benzothiadiazole) Films. *J. Chem.
+	 Phys.*, **(2009)**, 131: 104902/1−7.
+
+\noindent
+57. A. A. Kocherzhenko, S. Patwardhan, F. C. Grozema, H. L. Anderson and L. D. A.
+	Siebbeles, *J. Am. Chem. Soc.*, **(2009)**, 131: 5522–5529.
+
+\noindent
+58. Z. Hu and A. J. Gesquiere, *J. Am. Chem. Soc.*, **(2011)**, 133: 20850–20856.
