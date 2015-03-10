@@ -19,3 +19,13 @@
 
 %number equation in section
 %\numberwithin{equation}{section}
+
+%use boldface in latex equation
+\usepackage{bm}
+
+%change chapter caption to Chinese
+\usepackage{titlesec}
+\titleformat{\chapter}[display]{\normalfont\centering\huge\bfseries}{第 \thechapter 章}{20pt}{\Huge}
+%\titleformat{\chapter}[display]
+%  {\normalfont\huge\bfseries}{\filcenter\underline{\MakeUppercase{\textls[400]{\chaptertitlename}}\
+%  \thechapter}}{20pt}{\Huge}
