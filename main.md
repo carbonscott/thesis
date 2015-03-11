@@ -224,12 +224,14 @@ NP/电介质界面处电子深度自局域的实验中得到了支持。[58] 不
 H = H_l + H_e
 \end{equation}
 
+\noindent
 其中，晶格部分的能量可以写成晶格所具有的动能 $H_l^k$ 以及晶格的势能 $H_l^p$ 之和，
 
 \begin{equation}
 H_l = H_l^k + H_l^p
 \end{equation}
 
+\noindent
 晶格的动能涉及到晶格位移, 记作 $\bm{u_n}$， 其代表第 n
 个晶格距离其平衡位置发生的位移。其移动的速度用该位移表示为 
 
@@ -237,14 +239,182 @@ H_l = H_l^k + H_l^p
 \bm{\dot{u}_n} = \frac{\partial \bm{u_n}}{\partial t}
 \end{equation}
 
-借此，所有晶格的动能之和可以写成
+\noindent
+所有晶格的动能之和可以写成
 
 \begin{equation}
-T_l = 
+T_l = \sum\limits_{n}\frac{M}{2} \bm{\dot{u}_n}^2
+\end{equation}
+
+\noindent
+考虑所有晶格之间的弹性势能，
+
+\begin{equation}
+V_l = \frac{1}{2}\sum\limits_n K (\bm{u_{n+1}} - \bm{u_n})^2
+\end{equation}
+
+\noindent
+在这里，K代表弹性常量。因此，晶格系统的整体哈密顿量为
+
+\begin{equation}
+H_l = \sum\limits_{n}\frac{M}{2} \bm{\dot{u}_n}^2 + \frac{1}{2}\sum\limits_n K
+(\bm{u_{n+1}} - \bm{u_n})^2
+\end{equation}
+
+我们现在考虑电子部分的哈密顿量$H_e$。电子是在以电子声子相互作用的周期势场下运动的。
+同样地，我们用第n个晶格位移来表征其对第i个$\pi$电子的势能作用。如果原子所在的位置为平
+平衡位置，我们设其位移为$\bm{R_n^{0}}$，它相对于平衡位置移动了$\bm{u_n}$，那么原子的
+新位移位于
+
+\begin{equation}
+\bm{R_n} = \bm{R_l^{0}} + \bm{u_l}
+\end{equation}
+
+\noindent
+我们用$\bm{r_i}$代表第i个$\pi$电子的位置坐标，$V(\bm{r_i} - \bm{R_n})$代表第n个晶格
+上的原子对第i个原子上的$\pi$电子所作用的势能，那么整个晶格链上的所有原子对该$\pi$电
+子的势能之和为
+
+\begin{equation}
+U(\bm{r_i}) = \sum\limits_n V(\bm{r_i} - \bm{R_n})
+\end{equation}
+
+\noindent
+如果用$\bm{p_i}$代表电子的动量，$m$表示电子的质量，那么电子的动能可以表示为
+
+\begin{equation}
+T_i = \frac{\bm{p_i}^2}{2 m}
+\end{equation}
+
+\noindent
+在得到第i个位置上的电子势能以及其动能后，我们将可以把描述该电子的哈密顿量写成
+
+\begin{equation}
+H_e(i) = \frac{\bm{p_i}^2}{2 m} + \sum\limits_n V(\bm{r_i} - \bm{R_n})
+\end{equation}
+
+\noindent
+如果把所有电子的能量相加，我们可以把描述聚合物链上的所有$pi$电子的哈密顿量写成
+
+\begin{equation}
+H_e = \sum\limits_i H_e(i) = \sum\limits_i [\frac{\bm{p_i}^2}{2 m} + \sum\limits_n
+V(\bm{r_i} - \bm{R_n})]
+\end{equation}
+
+\noindent
+由于原子的质量比电子的质量要大的多，所以其量子效应较小，在哈密顿量中，原子的动量不需
+要代换成算符，这就使得原子部分的哈密顿量是经典的。电子部分的哈密顿量则要复杂得多，因
+为它的动量必须是替换成算符$-i\hbar\nabla_i$。薛定谔方程的解的难度也要大的多。在这里
+，我们考虑聚合物链的特点，采适当的近似方法，简化体系的哈密顿量。
+
+在相邻的聚合物单体之间，$\pi$电子的电子云(波函数)会互相交叠，因而只有相邻的原子之间
+的相互作用需要被考虑，此时的相互作用能我们设为函数
+$-t(\Delta\bm{R_n})$，其中$\Delta\bm{R_n} = \bm{R_{n+1}} - \bm{R_n}$，函数t是相邻两
+个原子之间距离的函数。受此相互作用，$\pi$电子可以从某个原子出发，跳向临近的原子。因
+此，在聚合物链上，$\pi$电子的运动可以被描述为在聚合物单体上的跳跃组成。现在我们来看
+$\pi$电子的某一次跳跃，即从第n个原子的位置跳向近临的第 n+1 个原子的位置。此时，在第n个
+原子的位置上，一个电子消失，而在第 n+1 个位置上增加了一个电子。在量子力学中，这种跳跃
+过程可以被"产生算符" $a_{n+1}^\dagger$ 与"湮灭算符" $a_{n}$ 描述。$a_{n+1}^\dagger$
+表示在第 n+1 
+个原子的位置上增加了一个电子，而 $a_n$ 表示在第n个原子的位置上减少一个电子。那么，当电
+子从第n个位置跳向第n+1个位置的过程就可以表示为 $a_{n+1}^{\dagger}a_n$ 。相反，电子从第 
+n+1 个原子跳回第 n 个原子的过程是 $a_{n}^{\dagger}a_{n+1}$ 。发生这种跳跃的几率取决于
+相邻两个原子之间的相互作用$-t(\Delta\bm{R_n})$，其中 $\Delta\bm{R_n}=\bm{R_{n+1}} -
+\bm{R_{n}}$。该相互作用越强，表示跳跃的几率越大。因此，电子的哈密顿量可以写为
+
+\begin{equation}\label{eq:ssh0}
+H_e = - \sum\limits_n t(\Delta\bm{R_n})(a_{n+1}^{\dagger} a_{n} + a_n^{\dagger}
+a_{n+1})
+\end{equation}
+
+\noindent
+在这里，略做一点补充：因为电子具有自旋$S = \pm
+\dfrac{1}{2}$，为了表示跳跃电子的自旋状态，把产生与湮灭算符写成$a_{n,s}^\dagger$和
+$a_{n,s}$，说明在第n个原子上增加或减少了一个自旋为$s$的电子。此时，考虑到原子离开平
+衡位置$\bm{R_n^{(0)}}$的位移非常小，这时候相邻原子间的距离
+$\Delta\bm{R_n}=\bm{R_{n+1}} - \bm{R_{n}} = (\bm{R_{n+1}^{(0)}} - \bm{R_{n}^{(0)}}) 
++ (\bm{u_{n+1}}-\bm{u_n})$非常接近平衡位置$\bm{R_{n+1}^{(0)}} - \bm{R_n^{(0)}}$，即
+$\left|\bm{u_{n+1}} - \bm{u_n}\right|$。因此，我们可以把相互作用的跳跃几率
+$t(\bm{R_{n+1}}-\bm{R_n})$展开为
+
+\begin{equation}
+t(\Delta\bm{R_{n}}) = t_0 - \alpha(\bm{u_{n+1}}-\bm{u_n})
+\end{equation}
+
+其中，$t_0 = t(\Delta\bm{R_n^{(0)}}) = t(\bm{R_{n+1}^{(0)}} - \bm{R_{n}^{(0)}})$，把
+该式带入公式(\ref{eq:ssh0})，可以得到哈密顿量
+
+\begin{equation}
+H_e = - \sum\limits_{n,s} \Big[ t_0 - \alpha (\bm{u_{n+1}}-\bm{u_n})
+\Big](a_{n+1,s}^\dagger a_{n,s} + a_{n,s}^\dagger a_{n+1,s})
+\end{equation}
+
+\noindent
+此时，整个聚合物链的哈密顿量变为
+
+\begin{equation}
+\begin{split}
+H & = H_e + H_l \\
+  & = -\sum\limits_{n,s} \Big[ t_0 - \alpha (\bm{u_{n+1}}-\bm{u_n})
+  \Big](a_{n+1,s}^\dagger a_{n,s} + a_{n,s}^\dagger a_{n+1,s}) \\ 
+  &  \quad + \dfrac{K}{2} \sum\limits_n (\bm{u_{n+1}} - \bm{u_n})^2 +
+  \dfrac{M}{2}\sum\limits_n \bm{\dot{u}_n}^2
+\end{split}
 \end{equation}
 
 
+<!--
+\begin{split}
+A & = \frac{\pi r^2}{2} \\
+ & = \frac{1}{2} \pi r^2
+\end{split} 
+--> 
 
+<!--
+\begin{equation}
+H = H_e + H_l = \sum\limits_{n}\frac{M}{2} \bm{\dot{u}_n}^2 +
+\frac{1}{2}\sum\limits_n K(\bm{u_{n+1}} - \bm{u_n})^2 + \sum\limits_i
+[-\frac{\hbar^2}{2 m} \nabla_i^2 + \sum\limits_n V(\bm{r_i} - \bm{R_n})]
+\end{equation}
+
+原子的经典处理
+在这里，我们要做一个近似：考虑到电子的质量与晶格原子的质量之间的比值非常小，我们对原
+子部分的哈密顿量做一个经典近似，即把原子的运动规律用经典力学的方法处理。
+
+我们先考虑N个电子在原子晶格产生的势场中运动，单电子的定态薛定谔方程为
+
+\begin{equation}
+[-\frac{\hbar^2}{2 m} \nabla_i^2 + \sum\limits_n V(\bm{r_i} - \bm{R_n})]\Psi(r) = E
+\Psi(r)
+\end{equation}
+
+\noindent
+在聚合物链中，当电子运动集中在第i个聚合物单体附近时，其受到的势能主要来自于该聚合物
+单体本身，即$V(\bm{r_i} - \bm{R_i})$。而其余所有单体对该电子的势能之和想比较该单体贝
+本身对电子的势能而言非常小，可以看作微扰。因此，我们在零级近似的处理下把其它单体所产
+生的势能忽略，这种对微扰的处理方式叫做"紧束缚近似"。此时，薛定谔方程为
+
+\begin{equation}
+[-\frac{\hbar^2}{2 m} \nabla_i^2 + V(\bm{r_i} - \bm{R_i})]\Psi(r) = E
+\Psi(r)
+\end{equation}
+
+\noindent
+我们把第n个电子的本征波函数设为$\phi_n(r)$，而把该电子在聚合物链中的波函数用电子的贝
+本征波函数线性展开，
+
+\begin{equation}
+\Psi(r) = \sum\limits_i \phi_i(r)
+\end{equation}
+
+\noindent
+因此，我们把第i个电子的定态薛定谔方程写为
+
+\begin{equation}
+[-\frac{\hbar^2}{2 m} \nabla_i^2 + V(\bm{r_i} - \bm{R_i})]\phi_i(r) = E
+\Psi(r)
+\end{equation}
+-->
 
 
 

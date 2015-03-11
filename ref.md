@@ -203,3 +203,6 @@
 
 \noindent
 58. Z. Hu and A. J. Gesquiere, *J. Am. Chem. Soc.*, **(2011)**, 133: 20850–20856.
+
+\noindent
+59. W.P. Su, J. Schrieffer, A.J. Heeger, *Phys. Rev. Lett*, **(1979)**, 42:1698.
