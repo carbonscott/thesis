@@ -459,7 +459,7 @@ a_{\beta+1}|n \rangle
 \noindent
 因此， 数值上来说，$H_e$ 将变成
 
-\begin{equation}
+\begin{equation} \label{eq:dig_H_e}
 \begin{split}
 \langle m | H_e | n \rangle
  &=\sum\limits_{\beta}C^\beta A_{m,n}^\beta \\
@@ -476,8 +476,47 @@ a_{\beta+1}|n \rangle
 谱和本征波函数。
 
 在得到电子哈密顿量对应矩阵$\langle \mu | H_e | \nu \rangle$之后， 我们就可以得到该电
-子在聚合物中运动的本征波函数$\langle \mu | \Psi^n \rangle$，其中 $n = 1, 2, ...$。
-同时，本征能谱中的第n个能级也可以被得到，记作$\varepsilon^n$。
+子在聚合物中运动的本征波函数$\langle \mu | \Psi^k \rangle$，其中 $k = 1, 2, ...$。
+同时，本征能谱中的第n个能级也可以被得到，记作$\varepsilon^k$。我们把该哈密顿量的矩阵
+形式带入到薛定谔方程中
+
+\begin{equation}
+H_e | \Psi^k \rangle = \varepsilon^k | \Psi^k \rangle
+\end{equation}
+
+\noindent
+其中，我们把描述电子在聚合物链中的运动用波函数$| \Psi^k \rangle$表示，现在我们把该方
+程矩阵化：首先，我们用电子本征矢量 $| m\rangle$ 左乘在等式两边做内积得到
+
+\begin{equation} \label{eq:dig_ssh}
+\langle m | H_e | \Psi^k \rangle = \varepsilon^k \langle m | \Psi^k \rangle
+\end{equation}
+
+\noindent
+此时，展开波矢$| \Psi^k \rangle$ 为 $| \Psi^k \rangle = \sum\limits_n |n \rangle
+\langle n | \Psi^k \rangle$，则有式(\ref{eq:dig_ssh})变为
+
+\begin{equation} \label{eq:dig_ssh2}
+\sum\limits_n \langle m | H_e | n \rangle \langle n | \Psi^k \rangle =
+\sum\limits_{n'} \varepsilon^k \langle m | n' \rangle \langle n' | \Psi^k \rangle
+\end{equation}
+
+\noindent
+我们把式(\ref{eq:dig_H_e})代入到式(\ref{eq:dig_ssh2})中，利用正交归一关系得到
+
+\begin{equation} 
+C_{m-1} \langle m - 1 | \Psi^k \rangle + C_{m+1} \langle m + 1 | \Psi^k \rangle = 
+\varepsilon_k \langle m | \Psi^k \rangle
+\end{equation}
+
+\noindent
+我们把Dirac符号重新用普通函数记号来表示：$\mathcal{Z}_m^k \equiv
+\langle m | \Psi^k \rangle$，那么上式将变为
+
+\begin{equation} \label{eq:dig_ssh3}
+C_{m-1} \mathcal{Z}_{m-1}^k + C_{m+1} \mathcal{Z}_{m+1}^k = \varepsilon_k
+\mathcal{Z}_m^k
+\end{equation}
 
 这里，我们可以考虑某时刻聚合物链体系的位移序参量$\bm{\phi_n} (n = 1, 2, ...)$在
 $\Delta T$时间段之后的状态$\bm{\phi_n^{t+1}} (n = 1, 2,
@@ -511,18 +550,45 @@ $\Delta T$时间段之后的状态$\bm{\phi_n^{t+1}} (n = 1, 2,
 \end{aligned}
 \end{equation}
 
-## 2.3 电子与晶格的耦合方程
+## 2.3 占据态的电子与晶格的耦合方程
 
 首先，我们利用电子部分的哈密顿量，可以得到电子在聚合物链体系下的本征能谱和本征波函数
 。然后，我们利用经典牛顿力学得到了晶格的位移序参量含时演化的方程。但是，考虑到电子和
 晶格的相互作用，即在某一时刻的电子的本征能谱与本征波函数将和该时刻的晶格位移有函数关
-系，该关系直接影响了
+系，该关系直接影响了有电子实际占据情况下的晶格位移的运动方程。因此，我们需要关注在一
+个聚合物链体系中占据态的电子晶格耦合方程。假设我们对所有被占据能级的能量取和
 
+\begin{equation} \label{eq:E_e}
+E_{\mu} = \sum\limits_i^{\mu} \varepsilon_i
+\end{equation}
 
+\noindent
+$\mu$表示占据态的个数。我们把电子占据能量与晶格原子的能量求和，就可以得到体系的总能量
 
+\begin{equation} \label{eq:E_el}
+E = E_{\mu} + \frac{K}{2}\sum\limits_i (\bm{u_{i+1}} - \bm{u_i})^2 + \frac{M}{2}
+\sum\limits_i \bm{\dot{u}_i}
+\end{equation}
 
+\noindent
+考虑到体系必须要处于极小值状态才能使得晶格的位移序参量达到稳定，即具有稳定的位型。因
+此，对第i个位置的晶格原子，我们有方程
 
+\begin{equation} \label{eq:var_cal}
+\dfrac{\delta E(\bm{u_i})}{\delta \bm{u_i}} = 0 \quad (i = 1, 2, ...)
+\end{equation}
 
+\noindent
+我们将式(\ref{eq:dig_ssh3})，式(\ref{eq:E_e})，式(\ref{eq:E_el})带入式(\ref{eq:var_cal})中，可以得到
+
+<!--
+此处方程的推导还需要再核实，这里不得不先贴结果。
+-->
+\begin{equation}
+\bm{u_{i+1}} - \bm{u_i} = -\dfrac{2 \alpha}{K} \Big[ \sum\limits_k \mathcal{Z}_i^k
+\mathcal{Z}_{i+1}^k - \dfrac{1}{N} \sum\limits_{i'}\sum\limits_k \mathcal{Z}_{i'}^k 
+\mathcal{Z}_{i'+1}^k\Big]
+\end{equation}
 
 
 ## 2.4 电子间相互作用Hatree Fock近似
