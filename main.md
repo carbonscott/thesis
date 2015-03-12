@@ -590,10 +590,79 @@ E = E_{\mu} + \frac{K}{2}\sum\limits_i (\bm{u_{i+1}} - \bm{u_i})^2 + \frac{M}{2}
 \mathcal{Z}_{i'+1}^k\Big]
 \end{equation}
 
+\noindent
+其中，$N$表示聚合物链体系由$N$个聚合物单体组成。
 
 ## 2.4 电子间相互作用Hatree Fock近似
 
+<!--
+check the data about eV
+What is the standard to say that a system is a strong-related system.
+--> 
+电子之间的相互作用在强关联体系中必须考虑。有机导电聚合物材料中，整个能带宽度约为$10
+eV$，但是此类材料的电子间相互作用一般都不大于$5eV$，所以该体系不属于强关联体系。也因
+为如此，电子的相互作用在此范围内对电子的运动性质并不会带来显著的变化。所以，我们在描
+述电子间相互作用对体系哈密顿量的影响时，采用在SSH模型中加入扩展的Hubbard项，再利用
+Hatree-Fock近似来得到此相互作用。经过Hubbard模型修正后的哈密顿量为
+
+\begin{equation}
+H = H_{ssh} + H_{e-e}
+\end{equation}
+
+\noindent
+其中，$H_{e-e}$为电子与电子的相互作用
+
+\begin{equation}
+\begin{split}
+H_{e-e} &= \dfrac{U}{2} \sum\limits_{n,s} \Big( a_{n,s}^\dagger a_{n,s} -
+\dfrac{1}{2} \Big)\Big( a_{n,-s}^\dagger a_{n,-s} - \dfrac{1}{2} \Big) \\
+&\quad + V \sum\limits_{n,s,s'} \Big( a_{n,s}^\dagger a_{n,s} - \dfrac{1}{2}
+\Big)\Big( a_{n+1,s'}^\dagger a_{n+1,s'} - \dfrac{1}{2} \Big) 
+\end{split}
+\end{equation}
+
+\noindent
+其中，$U$ 和 $V$
+是Hubbard项，分别表示同一个晶格格点上自旋相反电子的相互作用和相邻格点上的电子相互作
+用。再做Hatree-Fock近似后的哈密顿量可以表示为
+
+<!-- 
+H_{e-e} = \sum\limits_{n,s}\Big{U\Big( \sum\limits_\mu \Big|
+\mathcal{Z}_{n,-s}^\mu \Big| - \dfrac{1}{2} \Big) + V\Big[ \sum\limits_s \Big(
+\sum\limits_k \Big| \mathcal{Z}_{k-1,s}^\mu \Big|^2 + \sum\limits_\mu \Big|
+\mathcal{Z}_{n+1,s}^\mu \Big|^2 - 2\Big) \Big] \Big} a_{n,s}^\dagger a_{n,s} -
+\sum\limits_{n,s} \Big( V \sum\limits_{k}^{\mu} \mathcal{Z}_{n,k}^\mu
+\mathcal{Z}_{n+1,k}^\mu \Big) (a_{n+1,s}^\dagger a_{n,s} + a_{n,s}^\dagger
+a_{n+1,s}) \end{equation}
+--> 
+\begin{equation}
+\begin{aligned}
+H_{e-e} &= \sum\limits_{n,s}\Big\{U\Big( \sum\limits_{\mu} \Big|
+\mathcal{Z}_{n,-s}^{\mu} \Big| - \dfrac{1}{2} \Big) \\
+&+ V\Big[ \sum\limits_s \Big(
+\sum\limits_k \Big| \mathcal{Z}_{k-1,s}^{\mu} \Big|^2 + \sum\limits_{\mu} \Big|
+\mathcal{Z}_{n+1,s}^{\mu} \Big|^2 - 2\Big) \Big] \Big\} a_{n,s}^\dagger a_{n,s}\\
+&- \sum\limits_{n,s} \Big( V \sum\limits_{k}^{\mu} \mathcal{Z}_{n,k}^{\mu}
+\mathcal{Z}_{n+1,k}^{\mu} \Big) (a_{n+1,s}^\dagger a_{n,s} + a_{n,s}^\dagger
+a_{n+1,s}) 
+\end{aligned}
+\end{equation}
+<!-- H_{hf} = \sum\limits --> 
+
+
+
 ## 2.5 有机共轭聚合物中电子跃迁的偶极矩计算
+
+
+
+
+
+
+
+
+
+
+
 
 ## 3. 有机导电聚合物中的激子形成
 
