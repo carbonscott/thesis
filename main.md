@@ -647,18 +647,53 @@ H_{e-e} &= \sum\limits_{n,s}\Big\{U\Big( \sum\limits_{\mu} \Big|
 a_{n+1,s}) 
 \end{aligned}
 \end{equation}
-<!-- H_{hf} = \sum\limits --> 
 
+\noindent
+在把Hatree-Fock近似加入SSH模型之后，可得到Hubbard-SSH模型的电子波函数
 
+\begin{equation}
+\begin{aligned}
+\varepsilon_s^\mu \mathcal{Z}_{n,s}^\mu &= \Big[ U \Big( \rho_{n,-s} - \dfrac{1}{2} 
+\Big) + V \Big(\sum\limits_{s'} \rho_{n-1, s'} + \sum\limits_{s'} \rho_{n+1,s'} -
+2\Big) \Big]\mathcal{Z}_{n,s}^{\mu} \\
+&- \Big[ V \sum\limits_{\mu} \mathcal{Z}_{n,s}^{\mu} \mathcal{Z}_{n-1,s}^{\mu} 
++ t_0 + \alpha (\bm{u}_{n-1} - \bm{u}_n) + (-1)^{n-1} t_e
+  \Big]\mathcal{Z}_{n-1,s}^\mu \\
+&- \Big[ V \sum\limits_{\mu} \mathcal{Z}_{n,s}^{\mu} \mathcal{Z}_{n+1,s}^{\mu} + t_0
++ \alpha (\bm{u}_{n+1} - \bm{u}_n) + (-1)^{n+1} t_e \Big] \mathcal{Z}_{n+1,s}^{\mu}
+\end{aligned}
+\end{equation}
+
+\noindent
+其中，电荷分布可以用 $\rho_{n,s} = \displaystyle\sum\limits_{\mu} \big| \mathcal{Z}_{n,s}^{\mu}
+\big|$
 
 ## 2.5 有机共轭聚合物中电子跃迁的偶极矩计算
 
+在外界光作用下，电子会被激发而跃迁，这里我们需要考虑电子跃迁的速率。如果我们把能带中
+靠近导带的局域能级记作$\Gamma_u$，用波矢$|u\rangle$表示，且该能级上的电子占据数用
+$P_U$表示;靠近价带的局域能级记作$\Gamma_d$，用波矢$|d\rangle$表示,且该能级上的电子占
+据数用$P_d$表示。因此，跃迁能级之间的电偶极矩为$p = P_u \langle u | r | d \rangle$，
+其中$r$是电偶算符。那么，跃迁速率的表达式为
 
+\begin{equation}
+\begin{aligned}
+\gamma_{ud} &= \dfrac{4(E_u-E_d)^3}{3\hbar^4c^3} p^2 \\
+			&= \dfrac{4(E_u-E_d)^3}{3\hbar^4c^3} \big( P_u \langle u | r | d
+			\rangle\big)^2
+\end{aligned}
+\end{equation}
 
+其中，
 
+\begin{equation}
+\begin{aligned}
+&\dfrac{dP_u}{dt} = -\gamma_{ud}P_u\\
+&P_d = n - P_u
+\end{aligned}
+\end{equation}
 
-
-
+将该跃迁速率方程引入电子的动力学方程，即可探究激发下的电子动力学过程。
 
 
 
