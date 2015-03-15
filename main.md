@@ -698,7 +698,7 @@ $P_U$表示;靠近价带的局域能级记作$\Gamma_d$，用波矢$|d\rangle$�
 
 
 
-\setcounter{figure}{0}
+<!--\setcounter{figure}{0}-->
 
 # 有机导电聚合物中的激子形成
 
@@ -717,8 +717,18 @@ figure 能谱
 
 这里，为了描述晶格的位型，在基于聚合物链上第$n$个单元上的位移量$u_n$的基础上，我们作
 如下变换$\phi_n = (-1)^n u_n$使得之后的晶格位型以一种平滑的方式呈现。在不受外界光积
-光激发的影响下，晶格位型主要表现为单双键之间交替轮流，此为二聚化的结果，如图(ref{})。
+光激发的影响下，晶格位型主要表现为单双键之间交替轮流，此为二聚化的结果，如图
+(\ref{fig:config})。
 
+<!--
+figure 位型
+-->
+\begin{figure}[h!] 
+	\centering
+	\includegraphics[scale=1]{./figures/Exciton_Figure_2.png}
+	\caption{聚合物链未受光激发下的启发下形成的位型}
+	\label{fig:config}
+\end{figure}
 
 
 
