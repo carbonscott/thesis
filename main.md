@@ -849,7 +849,18 @@ fs。激光光强为$20\mu J/cm^2$时，电子从HOMO跃至LUMO态所需时间�
 升至$40\mu J/cm^2$时，电子跃迁完成的时间减短为为46 fs。如
 (\ref{fig:l_config})所示，我们分别对比了从$10\mu J/cm^2$到$40\mu
 J/cm^2$
-的4中不同外界光强下，共轭聚合物受激发后的晶格演化过程。由于外界激发光光强的增大，在
+<!--
+figure 不同光强的占据数
+-->
+\begin{figure}[h!] 
+	\centering
+	\includegraphics[scale=1]{./figures/Exciton_Figure_11.png}
+	\caption{光强为$10\mu J/cm^2$,$20\mu J/cm^2$,$30\mu J/cm^2$,$40\mu J/cm^2$的电子
+	占据数}
+	\label{fig:pop4}
+\end{figure}
+\noindent
+的4种不同外界光强下，共轭聚合物受激发后的晶格演化过程。由于外界激发光光强的增大，在
 激子形成过程中的电子跃迁完成所需时间缩短。由于共轭聚合物分子中电子
 -晶格相互作用，相应的晶格位形和电子态的演化也逐渐加速。在外界激发光光强为$10\mu
 J/cm^2$时，晶格位形被稳定的局域所需时间为200
@@ -874,22 +885,104 @@ figure 不同光强的晶格的演化
 -->
 \begin{figure}[h!] 
 	\centering
-	\includegraphics[scale=1]{./figures/Exciton_Figure_11.png}
-	\caption{光强为$10\mu J/cm^2$,$20\mu J/cm^2$,$30\mu J/cm^2$,$40\mu J/cm^2$的电子
-	占据数}
-	\label{fig:pop4}
-\end{figure}
-
-
-<!--
-figure 不同光强的晶格的演化
--->
-\begin{figure}[h!] 
-	\centering
 	\includegraphics[scale=0.4]{./figures/Exciton_Figure_12.png}
 	\caption{光强为$10\mu J/cm^2$,$20\mu J/cm^2$,$30\mu J/cm^2$,$40\mu J/cm^2$的晶格
 	位形}
 	\label{fig:l_config}
+\end{figure}
+
+## 4.3 激子的弛豫
+
+为了回答这个问题，我们需关注在更长的时间尺度下激子形成过程中各种能量的变化。当聚合物
+分子受到外界激发后，聚合物分子的总能量包括电子的能量、晶格的动能和势能。图(\ref{fig:total_energy})恰恰展现了在光强为$30\mu J/cm^2$
+的外界激发下在1200fs内聚合物分子总能量的演化过程。可以发现，在光激发初始到100飞秒的
+时间范围，聚合物分子收到外界光激发后，不仅总能量迅速升至最大值如图
+(\ref{fig:total_energy}a)
+，而且在100fs左右电子的激发跃迁也已完成如图
+(\ref{fig:pop})，但此时的总能量并没有处在一个稳定值。聚
+合物分子为了让总能量能够到达一个稳定值，进行能量的弛豫成了必要的环节。因此，我们把激
+子形成的整个过程分为两部分，激子的电子激发跃迁和激子的弛豫，如图
+(\ref{fig:total_energy}a)
+所示。其中激子的电子跃迁激发的所需时间由外界光强决定，而完成跃迁激发后聚合物分子则进
+入了弛豫的过程。从图4可知在光强为30的外界激发下聚合物分子完成激子中的电子跃迁需要64
+fs，而此后则是聚合物分子的弛豫时间。图
+(\ref{fig:total_energy}a)
+描述了弛豫过程中，体系能量经过振荡逐渐达到一个稳定的值，弛豫过程耗时536fs。
+
+<!--
+figure 能量总
+-->
+\begin{figure}[h!] 
+	\centering
+	\includegraphics[scale=1]{./figures/Exciton_Figure_7.png}
+	\caption{(a)聚合物链的总能量(前200fs);(b)聚合物链的总能量(200fs到1200fs)}
+	\label{fig:total_energy}
+\end{figure}
+
+外界光完成激子的电子激发跃迁的同时，恰好也形成了激子的局域，不仅在晶格位形上，还是在
+电子状态上。此后，共轭聚合物分子步入了激子形成的弛豫过程。在形成激子的弛豫过程中，聚
+合物分子晶格的总能量和电子的能量是如何变化的呢？图
+(\ref{fig:lattice_energy})刻画了晶格能量在整个激子形成过程
+中的演化，其中在激子完成电子跃迁的时间段，即初始的100fs内，晶格动能和势能，如图
+(\ref{fig:lattice_energy}a)和(\ref{fig:lattice_energy}b),
+<!--
+figure 晶格能量
+-->
+\begin{figure}[h!] 
+	\centering
+	\includegraphics[scale=1]{./figures/Exciton_Figure_8.png}
+	\caption{(a)聚合物链中的晶格能量(前200fs);(b)聚合物链中的晶格能量(前200fs)}
+	\label{fig:lattice_energy}
+\end{figure}
+
+\noindent
+经历了最大振荡，同时聚合物分子晶格也恰恰出现了局域畸变如图
+(\ref{fig:evo_config})，但分子的晶格的动能和势
+能并没有处于一个稳定值。在聚合物分子晶格形成局域畸变后，激子进入了弛豫过程。在考虑存
+在阻尼的情况下，晶格能量按照25fs的周期缓缓振荡，逐渐稳定，在450
+fs左右能量处于稳定。与此相对应的是，三维含时的晶格位形演变图(\ref{fig:3dl_config})清
+晰的展示，在聚合物分子受激形成激子的晶格局域后，弛豫过程中的晶格位形整体仍然按照25
+fs的周期振荡，在晶格位形演化图的表面留下波痕，但振荡幅度随着时间的演化而逐渐减弱，直
+至300fs晶格位形稳定。由于共轭聚合物分子特有的电子晶格相互作用，晶格的弛豫也诱发了电
+子弛豫，从图(\ref{fig:electron_energy})展示的激子形成过程中电子能量的演化可
+
+<!--
+figure 3d晶格
+-->
+\begin{figure}[h!] 
+	\centering
+	\includegraphics[scale=0.4]{./figures/Exciton_Figure_13.png}
+	\caption{聚合物链中晶格位形的演化}
+	\label{fig:3dl_config}
+\end{figure}
+
+\noindent
+以看出，在激子完成电子跃迁的100fs内，晶格动能和势能的最大幅度的振荡也诱发了电子能量
+在此时间段的最激烈的振荡。随后的弛豫过程中，电子能量也逐渐开始趋于稳定，虽然电子的能
+量也按照25fs的周期缓缓振荡，也在450fs左右最终收敛。此刻，电子的局域状态450
+fs的演化也进入稳定的局域状态，如图(\ref{fig:t_wavefun})所示。可见，当强度为30
+的外界光在激发共轭聚合物分子后，在450
+fs左右，聚合物分子的总能量，晶格的势能，电子的能量，晶格的位形，以及电子的状态，趋于
+最终稳定，形成激子，与最近的实验结果相符。
+
+<!--
+figure 电子能量
+-->
+\begin{figure}[h!] 
+	\centering
+	\includegraphics[scale=1]{./figures/Exciton_Figure_9.png}
+	\caption{共轭聚合物链中电子能量的演化}
+	\label{fig:electron_energy}
+\end{figure}
+
+<!--
+figure 含时电子波函数
+-->
+\begin{figure}[h!] 
+	\centering
+	\includegraphics[scale=1]{./figures/Exciton_Figure_10.png}
+	\caption{HOMO能级电子在聚合物链晶格上出现几率的含时演化}
+	\label{fig:t_wavefun}
 \end{figure}
 
 
