@@ -239,6 +239,7 @@ NP/电介质界面处电子深度自局域的实验中得到了支持。[@hu_cha
 
 
 
+\clearpage
 \setcounter{equation}{0}
 
 # 有机共轭聚合物的理论模型与动力学方法
@@ -730,6 +731,7 @@ $P_U$表示;靠近价带的局域能级记作$\Gamma_d$，用波矢$|d\rangle$�
 
 
 
+\clearpage
 
 <!--\setcounter{figure}{0}-->
 
@@ -1031,6 +1033,8 @@ figure 含时电子波函数
 形成激子。此外，本文也揭示了在激子形成局域过程中，外界光强对激子局域的时间的影响，发
 现外界光强的增大，不仅能缩短激子完成电子激发的时候，也将缩短激子形成局域的时间。
 
+\clearpage
+
 # 有机导电聚合物中的载流子输运
 \lhead{}
 \chead{第四章\quad 有机导电聚合物中的载流子输运}
@@ -1239,8 +1243,14 @@ J/cm^2$
 被输运到电极的几率，最终影响太阳能电池工作的效率。
 
 \clearpage
+\clearpage
 
-## 参考文献
+<!-- ## :参考文献: -->
+
+\begin{center}
+\Huge \textbf{参考文献}
+\end{center}
+
 \lhead{}
 \chead{参考文献}
 \rhead{}

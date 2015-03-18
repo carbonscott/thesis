@@ -1,6 +1,11 @@
 \clearpage
 
-## 参考文献
+<!-- ## :参考文献: -->
+
+\begin{center}
+\Huge \textbf{参考文献}
+\end{center}
+
 \lhead{}
 \chead{参考文献}
 \rhead{}
