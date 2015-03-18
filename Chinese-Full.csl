@@ -25,7 +25,7 @@
 
 	<macro name="author">
 		<names variable="author">
-			<name initialize-with=" " name-as-sort-order="all" sort-separator=" "
+			<name initialize-with="." name-as-sort-order="all" sort-separator=" "
 				delimiter=", " delimiter-precedes-last="always"/>
 
 
@@ -253,7 +253,7 @@
 		<option name="collapse" value="citation-number"/>
 
 		<sort>
-			<key variable="citation-number" sort="descending"/>
+			<key variable="citation-number" sort="ascending"/>
 		</sort>
 
 
@@ -274,7 +274,7 @@
 		<option name="entry-spacing" value="0"/>
 
 		<layout>
-			<text variable="citation-number" prefix="[" suffix="]"/>
+			<text hanging-indent="true" display="left-margin" variable="citation-number" prefix="[" suffix="] "/>
 			<text macro="author" suffix=". "/>
 			<text macro="titleField" />
 			<text macro="secondaryAuthor" suffix=". "/>	

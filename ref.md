@@ -1,8 +1,8 @@
 \clearpage
 
 ## 参考文献
-
-<!--\setlength{\parindent}{0em}-->
+\setlength{\parindent}{0em}
+<!--
 \noindent
 1. 孙鑫.高聚物中的孤子和极化子[M]，四川教育出版社,1988:1-115.
 
@@ -208,3 +208,4 @@
 
 \noindent
 59. W.P. Su, J. Schrieffer, A.J. Heeger, *Phys. Rev. Lett*, **(1979)**, 42:1698.
+-->

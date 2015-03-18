@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl"
+	class="in-text" xml:lang="en" default-locale="en-US">
+
+	<info>
+
+		<title>My first style</title>
+		<id>http://www.zotero.org/styles/my-style-name</id>
+		<author>
+			<name>My name</name>
+			<email>my-address@wherever.com</email>
+			<uri>http://wherever.com/</uri>
+		</author>
+		<category term="author-date"/>
+		<category term="zoology"/>
+		<updated>2008-10-29T21:01:24+00:00</updated>
+		<summary>My great new style format.</summary>
+		<rights>This work is licensed under a Creative Commons
+			Attribution-Share Alike 3.0 Unported License
+			http://creativecommons.org/licenses/by-sa/3.0/</rights>
+	</info>
+
+	<macro name="author">
+		<names variable="author">
+			<name initialize-with=". " name-as-sort-order="all" sort-separator=" "
+				delimiter=", " delimiter-precedes-last="always"/>
+		</names>
+	</macro>
+
+	<macro name="title">
+		<text variable="title"/>
+	</macro>
+
+	<macro name="titlefield">
+		<text macro="title" suffix="[J]. "/>
+	</macro>
+
+	<macro name="page">
+		<group>
+			<label variable="page" form="short" suffix=". "/>
+			<text variable="page"/>
+		</group>
+	</macro>
+
+	<macro name="pagefield">
+		<text variable="page"/>
+	</macro>
+
+	<citation>
+		<layout>
+			<text variable="citation-number" prefix="[" suffix="]"/>
+		</layout>
+	</citation>
+
+	<bibliography>
+		<layout>
+			<text variable="citation-number" prefix="[" suffix="]"/>
+			<text macro="author" suffix=". "/>
+			<text macro="titlefield"/>
+			<date variable="issued" >
+				<date-part name="year"/>
+			</date>
+			<text variable="volume" prefix=", "/>
+			<text variable="issue" prefix="(" suffix=")"/>
+			<text macro="pagefield" prefix=": " suffix=". "/>
+		</layout>
+	</bibliography>
+
+</style>
