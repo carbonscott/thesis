@@ -1,9 +1,10 @@
 %set margin specifics
-\usepackage[a4paper,left=1.18in,right=0.98in,top=1.38in,bottom=0.79in]{geometry}
+\usepackage[a4paper,left=2.6cm,right=2.4cm,top=2.54cm,bottom=2.54cm]{geometry}
 %set unicode
 \usepackage[utf8]{inputenc}
 %set chinese language support
 \usepackage{xeCJK}
+%\usepackage[english,russian,greek,ngerman,french]{babel}
 %set font
 \setCJKmainfont{SimSun}
 %set indent for paragraph
@@ -25,7 +26,8 @@
 
 %change chapter caption to Chinese
 \usepackage{titlesec}
-\titleformat{\chapter}[display]{\normalfont\centering\huge\bfseries}{第 \thechapter 章}{20pt}{\Huge}
+\titleformat{\chapter}[display]{\vspace{-4.5ex} \normalfont\centering\huge\bfseries}{第 \thechapter 章}{20pt}{\Huge}
+%\titleformat{\chapter}[display]{\normalfont\centering\huge\bfseries}{第 \thechapter 章}{20pt}{\Huge}
 %\titleformat{\chapter}[display]
 %  {\normalfont\huge\bfseries}{\filcenter\underline{\MakeUppercase{\textls[400]{\chaptertitlename}}\
 %  \thechapter}}{20pt}{\Huge}
@@ -42,3 +44,15 @@
 %biblatex bibliography indent
 \usepackage{biblatex}
 \setlength{\bibhang}{11pt}
+
+% header and footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%\lhead{}
+%\chead{第\thechapter 章 }
+%\rhead{}
+%\renewcommand{\chaptermark}[1]{\markboth{第\thechapter 章\ #1}{}}
+
+% toc header and footer setting
+\usepackage{tocloft}
+\tocloftpagestyle{plain}

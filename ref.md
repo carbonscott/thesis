@@ -1,6 +1,11 @@
 \clearpage
 
 ## 参考文献
+\lhead{}
+\chead{参考文献}
+\rhead{}
+\thispagestyle{empty}
+
 \setlength{\parindent}{0em}
 <!--
 \noindent
