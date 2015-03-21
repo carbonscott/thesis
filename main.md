@@ -61,6 +61,15 @@ Baldo等人让单重态激子 (singlet exciton) 激子与三重态激子 (triple
 Yong Cao 等人通过在
 共轭聚合物中掺杂改善电子传输材料的基团，使得量子效率增加到50%。[@cao_improved_1999] 
 
+<!--
+figure 有机导电聚合物发光二极管
+-->
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.6]{./figures/pled.jpeg}
+	\caption{有机导电聚合物发光二极管}
+	\label{fig:pled}
+\end{figure}
 
 聚合物太阳能电池的研究也可以追溯到上世纪50年代，已经有巨大的努力投入到了制备更高效的
 有机太阳能电池的研究中去。 D. Kearns等利用有机小分子材料镁酞菁制成最早的有机太阳能电
@@ -83,6 +92,16 @@ Sariciftci 等人在共轭聚合物与富勒烯的连接处观察到了一种极
 [@sariciftci_photoinduced_1992] 在这一现象的启发下，人们研制出了聚合物与富勒烯为材料的双层体异质结太阳能电池。
 [@smilowitz_photoexcitation_1993;@lee_sensitization_1993;@morita_doping_1992;@yoshino_marked_1993]
 
+<!--
+figure 有机导电聚合物太阳能电池
+-->
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.5]{./figures/solarcell.jpg}
+	\caption{有机导电聚合物太阳能电池}
+	\label{fig:solarcell}
+\end{figure}
+
 <!-- 44, problem of not the same paper Japanese Journal of Applied Physics --> 
 
 有机导电聚合物场效应管的研究起源于日本科学家赤松、井口在1954年的一个研究工作。他们在
@@ -96,6 +115,16 @@ Sariciftci 等人在共轭聚合物与富勒烯的连接处观察到了一种极
 [@horowitz_evidence_1996] 有机小分子高性
 能场效应管与无极材料硅为基础的场效应管在载流子迁移率已以及开关电流方面非常接近。但有
 机场效应管的制作成本更低，制作工艺简单，使得其应用前进非常被看好。
+
+<!--
+figure 有机导电聚合物场效应管
+-->
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.6]{./figures/ofet.jpg}
+	\caption{有机导电聚合物场效应管}
+	\label{fig:ofet}
+\end{figure}
 
 可以看到，有机材料为基础的各种设备在业界的应用会越来越广。而有机导电聚合物材料的研究
 更是其中最为重要的课题之一。本文将主要关注点放在了共轭聚合物材料导电性质的探究上，对
@@ -144,7 +173,7 @@ figure 极化子态
 -->
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.5]{./figures/polaron.png}
+	\includegraphics[scale=0.09]{./figures/polaron0.png}
 	\caption{在能带结构中，电子注入聚合物引起的能带变化并形成的负极化子}
 \end{figure}
 
@@ -1121,7 +1150,15 @@ $-0.05$\AA，但略小于$0.05$\AA。这部分值是由负极化子引起的畸�
 ，极化子开始朝大于50个格点的方向运动，直到600fs时，极化子已经运动到大约150个格点位置
 。在整个运动的过程中，极化子的运动位移
 与运动时间的关系基本保持线性关系。也就是说，极化子在电场中的运动几乎是表现为线性的匀
-速的运动。
+速的运动。除了让极化子发生运动，电场是否会影响极化子的能级结构的特点？能级结构可以直
+接从电子在能级上的占据数来表征。图
+(\ref{fig:pop41})
+是上局域能级的电子占据数随时间的变化关系。我们在0fs时刻开始加入电场的作用，从图
+(\ref{fig:pop41})
+可以看到，电子的占据数在初始时刻为0，代表了极化子正处于基态。随着电场的作用，该能级
+上的电子占据数始终为0，没有发生变化，这代表了在电场的作用下，极化子在每一个时刻都仍
+然处于基态。总之，电场作用下的基态极化子会在晶格链上发生位移，然而不会改变极化子的能
+级结构，原本处于基态的极化子始终处于基态。
 
 
 <!--
@@ -1132,6 +1169,56 @@ figure 电场下运动的负极化子
 	\includegraphics[scale=0.5]{./figures/epolaron.png}
 	\caption{电场下运动的负极化子}
 	\label{fig:epolaron}
+\end{figure}
+
+<!--
+figure 电子占据数的含时演化
+-->
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.5]{./figures/pop41.png}
+	\caption{电子占据数的含时演化}
+	\label{fig:pop41}
+\end{figure}
+
+但是，在外界的光激发下，极化子将会发生能级结构的改变，形成新的能级结构而处于激发态。
+我们研究极化子仅在外界光激发下的运动并展示其能级结构如何随激发的过程而改变。在0fs时
+刻，我们将20 外界光强开始作用于基态的极化子上。如图
+(\ref{fig:polaron_photon})
+所示，令极化子在0fs时刻处于第50个晶格的位置上。可以看到，随着外界光激发的进行，
+在600fs内极化子的位移始终没有发生变化。因此，光强对极化子的激发作用并不会使得极化子
+发生其在晶格位置上的改变。那么，光激发强度将怎样改变极化子的能级结构？如图
+(\ref{fig:pop42})
+所示的是上局域能级的电子占据数随时间的变化，在0fs时刻，我们将外界光强开始作用于基
+态的极化子上，此时电子的占据数为0，在光激发的100fs内，上局域能级的电子占据数迅速的趋
+向并靠近
+0.5
+。随着光激发的进行，该能级的电子占据数几乎不再发生变化。可以清晰地看到，将0fs时刻与
+400fs时刻的上局域能级电子占据数进行比较，可以发现该电子占据数从0变化到了
+0.5
+，这代表了极化子的能级结构发生了改变，极化子脱离基态的状态而形成了激发态。同时，考虑
+到上下局域能级的电子占据总数设为1，导致了该激发态的上局域能级占据数和下局域能级的占
+据数相同，都为
+0.5
+。综上所述，在外界光激发作用下，极化子并不会发生在晶格上的位移，对其有意义的是，极化
+子的能级结构将发生改变，导致极化子不再处于基态而形成一个新的激发状态。
+<!--
+figure 光场下运动的负极化子
+-->
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.5]{./figures/epolaron_photon.png}
+	\caption{光场下运动的负极化子}
+	\label{fig:polaron_photon}
+\end{figure}
+<!--
+figure 电子占据数的含时演化
+-->
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.5]{./figures/pop42.png}
+	\caption{电子占据数的含时演化}
+	\label{fig:pop42}
 \end{figure}
 
 ## 4.2 激发态极化子的输运性质
