@@ -152,11 +152,11 @@ figure 极化子态
 为了得到更高效率的有机太阳能电池，以上的四个步骤中的每一个都值得去研究。在自发辐射已
 以及非辐射跃迁的条件下，激子会在扩散的过程中衰减。因此，对于减少激子的衰减的数量，现
 现在科学家们采用了减少激子扩散距离的做法。体异质结太阳能电池的结构被认为是很好的减少
-了激子扩散的距离。如图1所示的是理想情况下的有机体异质结太阳能电池的结构。
+了激子扩散的距离。如图(\ref{fig:solar})所示的是理想情况下的有机体异质结太阳能电池的结构。
 [@yang_morphology_1996;@scharber_efficiency_2013]
 给体与受体之间有非常理想的充分融合，但是这种组织良好的体异质结结构在纳米尺度下却很难
 成型。因此，一般来说，现实工艺下的结果是近一维形态的聚合物受体材料被溶解在给体材料的
-体系当中形成的。现实中的体异质结太阳能电池的结构如图 2。正是由于这种结构，体异质结随
+体系当中形成的。现实中的体异质结太阳能电池的结构如图(\ref{fig:solar3d})。正是由于这种结构，体异质结随
 机地充满了太阳能电池电极之间的空间，这样的形态使得充满这个空间中的被外界光强激发的激
 子可以再形成后实现极高几率的分离，因为激子在形成的地方很有可能就是受体与给体的接触面
 而使得激子分离前的扩散距离非常短, 降低了激子扩散中途衰减的可能性。实验中，在等规性
@@ -176,6 +176,7 @@ figure 理想情况下的有机体异质结太阳能电池的结构
 	\centering
 	\includegraphics[scale=0.8]{./figures/solar2d.png}
 	\caption{理想情况下的有机体异质结太阳能电池的结构}
+	\label{fig:solar}
 \end{figure}
 
 <!--
@@ -185,6 +186,7 @@ figure 现实情况下的有机体异质结太阳能电池的结构
 	\centering
 	\includegraphics[scale=0.8]{./figures/solar3d.png}
 	\caption{现实情况下的有机体异质结太阳能电池的结构}
+	\label{fig:solar3d}
 \end{figure}
 
 ## 1.3 探究思路
@@ -563,10 +565,7 @@ $\Delta T$时间段之后的状态$\bm{\phi_n^{t+1}} (n = 1, 2,
 \begin{equation}
 \begin{aligned}
 \bm{x_n^{t+1}} &= \bm{x_n^t} + \bm{v_n^t} \Delta T \\
-\bm{v_n^{t+1}} &= \bm{v_n^t} + \dfrac{\bm{F_n^t}\Delta T}{M_n} \\
-      &= \bm{v_n^t} +
-	  (-1)\dfrac{U(\bm{x_n^t})-U(\bm{x_{n-1}^t})}{\bm{x_n^t}-\bm{x_{n-1}^t}}
-	  \dfrac{\Delta T}{M_n}
+\bm{v_n^{t+1}} &= \bm{v_n^t} + \dfrac{\bm{F_n^t}\Delta T}{M_n} 
 \end{aligned}
 \end{equation}
 
@@ -577,12 +576,31 @@ $\Delta T$时间段之后的状态$\bm{\phi_n^{t+1}} (n = 1, 2,
 \begin{equation}
 \begin{aligned}
 \bm{\phi_n^{t+1}} &= \bm{\phi_n^t} + (-1)^n\bm{v_n^t} \Delta T \\
-\bm{v_n^{t+1}} &= \bm{v_n^t} + \dfrac{\bm{F_n^t}\Delta T}{M_n} \\
-      &= \bm{v_n^t} +
-	  (-1)^{1-n}\dfrac{U(\bm{\phi_n^t})-U(\bm{\phi_{n-1}^t})}{\bm{\phi_n^t}-\bm{\phi_{n-1}^t}}
-	  \dfrac{\Delta T}{M_n}
+\bm{v_n^{t+1}} &= \bm{v_n^t} + \dfrac{\bm{F_n^t}\Delta T}{M_n} 
 \end{aligned}
 \end{equation}
+
+\noindent
+其中，对于一维的有机共轭聚合物体系，上述表达式中的力$F_n$可由Feynman-Hellmann定理
+求得
+
+\begin{equation}
+\begin{split}
+F_n &= - \langle \Psi | \dfrac{\partial H}{\partial \phi_n} | \Psi \rangle \\
+&=
+\begin{cases}
+2 \alpha \displaystyle \sum\limits_s W_{0,s} - K (\phi_0 + \phi_1) - K' \alpha, & n = 0 \\
+2 \alpha \displaystyle \sum\limits_s W_{N-2,s} - K (\phi_{N-2} + \phi_{N-1}) - K' \alpha, & n = N-1 \\
+2(-1)^n \alpha \displaystyle \sum\limits_s (W_{n,s}-W_{n-1,s}) - K (\phi_{n-1} + 2 \phi_{n} +
+\phi_{n+1}) - K' \alpha, & 0 < n < N-1 
+\end{cases}
+\end{split}
+\end{equation}
+
+\noindent
+上式中的$W_{n,s} = \displaystyle \sum\limits_\mu Z_{n+1,s}^\mu Z_{n,s}^\mu$，
+$K' = \dfrac{2}{N} \displaystyle \sum\limits_{n,s}\sum\limits_\mu Z_{n+1,s}^\mu
+Z_{n,s}^\mu$， 其中$\mu$是能级的指标，$n$是位置的指标，$s$是电子自旋的指标。
 
 ## 2.3 占据态的电子与晶格的耦合方程
 
@@ -982,12 +1000,6 @@ fs左右能量处于稳定。与此相对应的是，三维含时的晶格位形
 fs的周期振荡，在晶格位形演化图的表面留下波痕，但振荡幅度随着时间的演化而逐渐减弱，直
 至300fs晶格位形稳定。由于共轭聚合物分子特有的电子晶格相互作用，晶格的弛豫也诱发了电
 子弛豫，从图(\ref{fig:electron_energy})展示的激子形成过程中电子能量的演化可
-\begin{figure}[h!] 
-	\centering
-	\includegraphics[scale=0.4]{./figures/Exciton_Figure_13.png}
-	\caption{聚合物链中晶格位形的演化}
-	\label{fig:3dl_config}
-\end{figure}
 以看出，在激子完成电子跃迁的100fs内，晶格动能和势能的最大幅度的振荡也诱发了电子能量
 在此时间段的最激烈的振荡。随后的弛豫过程中，电子能量也逐渐开始趋于稳定，虽然电子的能
 量也按照25fs的周期缓缓振荡，也在450fs左右最终收敛。此刻，电子的局域状态450
@@ -995,7 +1007,12 @@ fs的演化也进入稳定的局域状态，如图(\ref{fig:t_wavefun})所示。
 的外界光在激发共轭聚合物分子后，在450
 fs左右，聚合物分子的总能量，晶格的势能，电子的能量，晶格的位形，以及电子的状态，趋于
 最终稳定，形成激子，与最近的实验结果相符。
-
+\begin{figure}[h!] 
+	\centering
+	\includegraphics[scale=0.4]{./figures/Exciton_Figure_13.png}
+	\caption{聚合物链中晶格位形的演化}
+	\label{fig:3dl_config}
+\end{figure}
 <!--
 figure 电子能量
 -->
