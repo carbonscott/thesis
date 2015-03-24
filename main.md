@@ -1,3 +1,10 @@
+<!-- table of contents -->
+\cleardoublepage
+\pagenumbering{gobble}
+\tableofcontents
+\cleardoublepage
+\pagenumbering{arabic}
+
 
 # 有机导电聚合物太阳能电池材料介绍
 \lhead{}
@@ -122,7 +129,7 @@ figure 有机导电聚合物场效应管
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.6]{./figures/ofet.jpg}
-	\caption{有机导电聚合物场效应管}
+	\caption{有机导电聚合物场效应管为基础的发光设备}
 	\label{fig:ofet}
 \end{figure}
 
