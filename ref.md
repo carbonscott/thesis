@@ -9,8 +9,8 @@
 \lhead{}
 \chead{参考文献}
 \rhead{}
-\thispagestyle{empty}
-
+\pagestyle{plain}
+\addcontentsline{toc}{chapter}{参考文献}
 \setlength{\parindent}{0em}
 <!--
 \noindent
