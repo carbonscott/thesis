@@ -21,16 +21,10 @@ Conjugated polymer has many applications in the semiconductor industry: Polymer
 Light-Emitting Diodes, Polymer Field-Effect Transistor and Polymer Solar Cell. There
 are tremendous attention paid to the research on polymer solar cell as people are
 getting more aware of environment protection as well as the comprehension of
-developing new kind of energy. Alan Heeger, as one of the authorities in the
-research of polymer semiconductor, made huge effort in this area with his group,
-regarding not only morphological dependence on soalr cell
-efficiency[@huang_bulk_2014;@takacs_solar_2012;@yang_morphology_1996], but aslo
-micro mechanism like charge generation[@cowan_charge_2012;@banerji_exciton_2010;
-@banerji_ultrafast_2011] and charge
-transport[@kaake_charge_2015;@zhong_ultrafast_2015]. This thesis focues on two
-highly discussed aspects in the research of polymer solar cell: (1) Charge
-generation, or excition formation process; (2) Charge transport, or dynamics of
-charge carrier motion in conjuatged polymer system.
+developing new kind of energy. This thesis focues on two highly discussed aspects
+based on the research of Alan Heeger's group:
+(1) Charge generation, or excition formation process; (2) Charge transport, or
+dynamics of charge carrier motion in conjuatged polymer system.
 
 
 Molecule dynamics is empolyed to uncover the time profile of exciton formation,
@@ -44,7 +38,8 @@ energy reach certain values while the lattice configuration and electron eremain
 localized, and indicating the formation of a singlet exciton. Because electron-hole
 pair is localized before exciton is formed, it is highly likely that the
 electron-hole pair will be separated before the formation of exciton in the process
-of conducting polymeric solar cell.
+of conducting polymeric solar cell. The corresponding result has been published on
+*Journal of Physical Chemistry B*.
 
 In a real bulk heterojunction polymer solar cell, after exciton separation in the
 heterojunction,the resulting negatively-charged  carrier, a polaron, moves along the
@@ -58,13 +53,14 @@ crucially dependent on the photoexcitation. With an increase in the instensity o
 the optical filed, the localization of the excited polaron has been deepning, with a
 slowing down of the polaron’s velocity. Mostly, the deep trapping effect of charged
 carrier in composite conjugated polymer solar cell presents an opportunity for the
-future application in nanoscale memory and imaging devices. 
+future application in nanoscale memory and imaging devices. The corresponding result
+has been published on *Nanoscale*.
 
 \vspace{1.5cm}
 \noindent
 \large 
-\textbf{KEY WORDS: localization of exciton, semiconducting polymeric solar cell,
-charge carrier transport, photoexcitation.
+\textbf{KEY WORDS: localization, exciton, semiconducting polymer, solar cell,
+polaron, transport, photoexcitation.
 }
 
 
